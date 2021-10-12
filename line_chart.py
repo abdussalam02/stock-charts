@@ -12,7 +12,7 @@ d2 = d2.strftime("%Y/%m/%d")
 start_date = d2
 import streamlit as st
 st.title("Real Time Stock Price Data")
-a = st.text_input("Enter the name of the Company: ")+(".ns")
+a = st.text_input("Enter the name of Indian Stock: ")+(".ns")
 stock = a
 data = web.DataReader(name=a, data_source='yahoo', start=start_date, end=end_date)
 fig, ax = plt.subplots()
